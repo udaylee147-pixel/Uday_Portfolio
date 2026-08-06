@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Uday Kumar | Portfolio</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+background:#07111f;
+color:white;
+
+}
+
+
+/* Navbar */
+
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+
+background:#07111fcc;
+backdrop-filter:blur(10px);
+
+z-index:1000;
+
+}
+
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+
+}
+
+
+.logo{
+
+font-size:28px;
+color:#00d9ff;
+
+}
+
+
+nav ul{
+
+display:flex;
+gap:25px;
+list-style:none;
+
+}
+
+
+nav ul li a{
+
+text-decoration:none;
+color:white;
+font-size:15px;
+
+}
+
+
+nav ul li a:hover{
+
+color:#00d9ff;
+
+}
+
+
+
+/* Common */
+
+
+section{
+
+padding:100px 8%;
+
+}
+
+
+.title{
+
+text-align:center;
+font-size:35px;
+color:#00d9ff;
+margin-bottom:50px;
+
+}
+
+
+
+/* Hero */
+
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+}
+
+
+.hero-text{
+
+max-width:600px;
+
+}
+
+
+
+.hero h1{
+
+font-size:55px;
+
+}
+
+
+.hero h1 span{
+
+color:#00d9ff;
+
+}
+
+
+.hero h2{
+
+margin:15px 0;
+
+color:#ccc;
+
+}
+
+
+.hero p{
+
+color:#aaa;
+line-height:1.8;
+
+}
+
+
+.btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:12px 30px;
+
+background:#00d9ff;
+
+color:black;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+
+
+.profile img{
+
+width:320px;
+height:320px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:5px solid #00d9ff;
+
+box-shadow:0 0 40px #00d9ff;
+
+animation:float 3s infinite alternate;
+
+}
+
+
+
+@keyframes float{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+
+
+/* Cards */
+
+
+.card{
+
+background:#111d30;
+
+padding:30px;
+
+border-radius:25px;
+
+margin:20px 0;
+
+transition:.4s;
+
+border:1px solid #ffffff10;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px #00d9ff55;
+
+}
+
+
+
+.card h2{
+
+color:#00d9ff;
+
+margin-bottom:15px;
+
+}
+
+
+.card p{
+
+color:#ccc;
+line-height:1.8;
+
+}
+
+
+
+/* Grid */
+
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+
+
+/* Skills */
+
+
+.skill{
+
+margin:15px 0;
+
+}
+
+
+
+.skill span{
+
+display:block;
+
+margin-bottom:8px;
+
+}
+
+
+
+.bar{
+
+height:8px;
+
+background:#333;
+
+border-radius:20px;
+
+}
+
+
+
+.progress{
+
+height:100%;
+
+background:#00d9ff;
+
+border-radius:20px;
+
+}
+
+
+
+/* Footer */
+
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+background:#050c16;
+
+color:#aaa;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:900px){
+
+
+nav ul{
+
+display:none;
+
+}
+
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+gap:40px;
+
+}
+
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.profile img{
+
+width:230px;
+height:230px;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<nav>
+
+<h2 class="logo">
+
+</h2>
+
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<!-- <li><a href="#projects">Projects</a></li> -->
+<li><a href="#experience">Experience</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+
+<!-- HOME -->
+
+
+<section class="hero" id="home">
+
+
+<div class="hero-text">
+
+
+<h1>
+
+Hi, I'm <span>Uday Kumar M</span>
+
+</h1>
+
+
+<h2>
+
+Associate-Business Developement Executive
+
+
+
+</h2>
+
+
+<p>
+
+A results-driven professional with experience in
+B2B and B2C business development, client management,
+sales strategies and technology solutions.
+
+</p>
+
+
+
+<a href="c:\Users\Welcome\Desktop\Uday_Kumar_M_Resume.pdf" class="btn">
+
+Download Resume
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="profile">
+
+<img src="c:\Users\Welcome\Downloads\photo.png">
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ABOUT -->
+
+
+<section id="about">
+
+
+<h1 class="title">
+
+About Me
+
+</h1>
+
+
+<div class="card">
+
+
+<p>
+
+A dedicated Business Development and Relationship Management professional
+with experience in client handling, sales strategy, and market expansion.
+
+I enjoy connecting with clients, understanding their needs, and creating
+impactful solutions that drive business growth and build long-term partnerships.
+
+Focused on building meaningful relationships, driving revenue growth,
+and delivering customer-centric solutions through effective communication
+and strategic business approaches.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+
+<h1 class="title">
+
+Skills
+
+</h1>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h2>
+Technical Skills
+</h2>
+
+
+<p>
+
+SQL<br>
+Power BI<br>
+Microsoft Excel
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<h2>
+
+Soft Skills
+
+</h2>
+
+
+<p>
+
+Strategic Market Expansion<br>
+Lead Generation & Conversion<br>
+Client Handling<br>
+CRM & Business Intelligence<br>
+Sales Strategy<br>
+Team Collaboration
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- PROJECTS -->
+<!-- PROJECTS
+
+<section id="projects">
+
+
+<h1 class="title">
+
+Projects
+
+</h1>
+
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<h2>
+
+Salesforce Email Automation
+
+</h2>
+
+
+<p>
+
+Created automated customer journeys using
+Journey Builder and Automation Studio.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>
+
+Power BI Dashboard
+
+</h2>
+
+
+<p>
+
+Designed interactive dashboards using Excel
+data and visualization techniques.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section> 
+
+END PROJECTS -->
+
+
+
+<!-- EXPERIENCE -->
+
+
+<section id="experience">
+
+
+<h1 class="title">
+
+Experience
+
+</h1>
+
+
+
+<div class="card">
+
+<h2>
+Colive
+</h2>
+
+<p>
+
+Role: Relationship Manager<br>
+Duration: 2026 - Present
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h2>
+AISECT Limited
+</h2>
+
+<p>
+
+Role: Associate - Business Development Executive<br>
+Duration: 2025 - 2026
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<!-- EDUCATION -->
+
+
+<section id="education">
+
+
+<h1 class="title">
+
+Education
+
+</h1>
+
+
+<div class="card">
+
+
+<h2>
+
+B.Tech Agricultural Engineering
+
+</h2>
+
+
+<p>
+
+Siddhartha Institute of Engineering and Technology
+
+<br>
+
+Year: 2023
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CERTIFICATIONS -->
+
+
+<section id="certifications">
+
+
+<h1 class="title">
+
+Certifications
+
+</h1>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+🏆 Capacity Building Program
+
+</div>
+
+
+<div class="card">
+
+🏆 Digital Marketing
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section id="contact">
+
+
+<h1 class="title">
+
+Contact
+
+</h1>
+
+
+<div class="card">
+
+
+<p>
+
+Email:
+udaykumaruday000@gmail.com
+
+<br><br>
+
+Mobile: 
+9392857730
+
+<br><br>
+
+LinkedIn:
+uday-kumar-m-b32327269
+
+<br><br>
+
+GitHub:
+https://github.com/udaylee147-pixel
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<footer>
+
+
+© 2026 Uday Kumar | Designed with ❤️
+
+
+</footer>
+
+
+
+<script>
+
+
+// Card Animation
+
+let cards=document.querySelectorAll(".card");
+
+
+window.addEventListener("scroll",()=>{
+
+
+cards.forEach(card=>{
+
+
+let top=card.getBoundingClientRect().top;
+
+
+if(top < window.innerHeight-100){
+
+card.style.opacity="1";
+card.style.transform="translateY(0)";
+
+}
+
+
+});
+
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
